@@ -6,6 +6,8 @@ import pickle
 from pathlib import Path
 from tqdm import tqdm
 
+width = 9
+height = 6
 def calibrateCamera(pathfilter):
     if Path('cam_cal.p').is_file():
         try:
@@ -20,8 +22,8 @@ def calibrateCamera(pathfilter):
 
     print("Recalibrating")
     # prepare object points, like (0,0,0), (1,0,0), (2,0,0) ....,(6,5,0)
-    objp = np.zeros((6*8,3), np.float32)
-    objp[:,:2] = np.mgrid[0:8, 0:6].T.reshape(-1,2)
+    objp = np.zeros((height*width,3), np.float32)
+    objp[:,:2] = np.mgrid[0:width, 0:height].T.reshape(-1,2)
 
     # Arrays to store object points and image points from all the images.
     objpoints = [] # 3d points in real world space
@@ -37,7 +39,7 @@ def calibrateCamera(pathfilter):
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
         # Find the chessboard corners
-        ret, corners = cv2.findChessboardCorners(gray, (8,6), None)
+        ret, corners = cv2.findChessboardCorners(gray, (width, height), None)
 
         # If found, add object points, image points
         if ret == True:
@@ -45,7 +47,7 @@ def calibrateCamera(pathfilter):
             imgpoints.append(corners)
 
             # Draw and display the corners
-            cv2.drawChessboardCorners(img, (8,6), corners, ret)
+            cv2.drawChessboardCorners(img, (width, height), corners, ret)
             #write_name = 'corners_found'+str(idx)+'.jpg'
             #cv2.imwrite(write_name, img)
             cv2.imshow('img', img)
