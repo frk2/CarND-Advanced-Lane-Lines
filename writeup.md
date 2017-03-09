@@ -138,3 +138,15 @@ The following video is what you get:
 ---
 
 ###Discussion
+Extremely fun project which not only gets you a solid understanding of image processing in python but also helps to understand matrix manipulation within the language very well. Key takeaways:
+
+- s-channel in HLS is amazing on its very own. It is probably the single most important peice to locate lane lines
+- When looking for lane lines using convolutions, it is important to threshold the convolution so it doesn't pick up dark black areas.
+- It is crucial to look ahead when looking for lane lines, otherwise accuracy takes a tumble
+
+What im curious to learn more on:
+- My performance in bright sunlight wasn't exactly spectacular - wondering how this can be made better
+- my algo always detects the left line first, and when at zero state accepts any match as the source of truth. In case this is wrong, it takes a while for my algo to recover. Need to improve on this somehow by adding a concept of how 'sure' we are about our fitted lines and being able to overturn the left fit for a awesome right fit.
+- My parallel testing is very unscientific. I wasn't able to lookup any mathematical concept to help with calculating the perpendicular distance between two polynomials - any references are welcome!
+
+
