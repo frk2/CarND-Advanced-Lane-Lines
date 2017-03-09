@@ -14,7 +14,8 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/undistort_output.png "Undistorted"
+[image1b]: ./output_images/undistored.jpg "Undistorted"
+[image1a]: ./output_images/calibration1.jpg "Distorted"
 [image2]: ./test_images/test1.jpg "Road Transformed"
 [image3]: ./examples/binary_combo_example.jpg "Binary Example"
 [image4]: ./examples/warped_straight_lines.jpg "Warp Example"
@@ -26,7 +27,8 @@ The goals / steps of this project are the following:
 I used a separate file (cam_calibrate.py) just because I wanted a separate usable peice of code and wanted to play around with python. This calibrates the camera and writes the calibration matrix to a pickle file. The next time, the matrix is returned straight from the pickle file instead of calibrating over and over again.
 
 Here is the calibration matrix applied to one of the calibration images themselves:
-![alt text][image1]
+![alt text][image1a]
+![image1b]
 
 ##Pipeline
 
