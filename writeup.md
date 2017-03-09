@@ -24,7 +24,7 @@ The goals / steps of this project are the following:
 [video1]:  "Video"
 
 ###Camera Calibration
-I used a separate file (cam_calibrate.py) just because I wanted a separate usable peice of code and wanted to play around with python. This calibrates the camera and writes the calibration matrix to a pickle file. The next time, the matrix is returned straight from the pickle file instead of calibrating over and over again.
+I used a separate file `cam_calibrate.py` just because I wanted a separate usable peice of code and wanted to play around with python. This calibrates the camera and writes the calibration matrix to a pickle file. The next time, the matrix is returned straight from the pickle file instead of calibrating over and over again.
 
 Here is the calibration matrix applied to one of the calibration images themselves:
 ![image1a]
@@ -32,7 +32,7 @@ Here is the calibration matrix applied to one of the calibration images themselv
 
 ##Pipeline
 
-The pipeline reads an image at a time and applies multiple transformations to get it into a state where I can use `np.convolve` and fit a polynomial. This is then cached in a `Line` class which additionally averages the input over 10 images. The Line class is responsible for providing the best fit in cases where the current fit is unsuitable.
+The pipeline `image_processor.py` reads an image at a time and applies multiple transformations to get it into a state where I can use `np.convolve` and fit a polynomial. This is then cached in a `Line` class which additionally averages the input over 10 images. The Line class is responsible for providing the best fit in cases where the current fit is unsuitable.
 
 ##### Undistort
 I use the cached calibration matrix and undistort each image such that it looks like:
