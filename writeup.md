@@ -14,20 +14,20 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1b]: ./output_images/undistored.jpg "Undistorted"
+[image1b]: ./output_images/undistorted.jpg "Undistorted"
 [image1a]: ./output_images/calibration1.jpg "Distorted"
-[image2]: ./test_images/test1.jpg "Road Transformed"
-[image3]: ./examples/binary_combo_example.jpg "Binary Example"
-[image4]: ./examples/warped_straight_lines.jpg "Warp Example"
-[image5]: ./examples/color_fit_lines.jpg "Fit Visual"
-[image6]: ./examples/example_output.jpg "Output"
-[video1]: ./project_video.mp4 "Video"
+[image2]: ./output_images/real_undistorted.jpg "Real Undistorted"
+[image3]: ./output_images/binary_output.jpg "Binary"
+[image4]: ./output_images/warped.jpg "Warped"
+[image5]: ./output_images/colorwarpedjpg "Color warped"
+[image6]: ./output_images/output.jpg "Output"
+[video1]: ./output.mp4 "Video"
 
 ###Camera Calibration
 I used a separate file (cam_calibrate.py) just because I wanted a separate usable peice of code and wanted to play around with python. This calibrates the camera and writes the calibration matrix to a pickle file. The next time, the matrix is returned straight from the pickle file instead of calibrating over and over again.
 
 Here is the calibration matrix applied to one of the calibration images themselves:
-![alt text][image1a]
+![image1a]
 ![image1b]
 
 ##Pipeline
