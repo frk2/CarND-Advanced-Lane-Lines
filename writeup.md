@@ -21,7 +21,7 @@ The goals / steps of this project are the following:
 [image4]: ./output_images/warped.jpg "Warped"
 [image5]: ./output_images/colorwarped.jpg "Color warped"
 [image6]: ./output_images/output.jpg "Output"
-[video1]: https://youtu.be/IGx0S4LCpFQ "Video"
+[video1]:  "Video"
 
 ###Camera Calibration
 I used a separate file (cam_calibrate.py) just because I wanted a separate usable peice of code and wanted to play around with python. This calibrates the camera and writes the calibration matrix to a pickle file. The next time, the matrix is returned straight from the pickle file instead of calibrating over and over again.
@@ -131,7 +131,7 @@ The final output image is as shown. A few tweaks were performed to aid debugging
 
 ###Pipeline (video)
 The following video is what you get:
-![Click to view video on youtube][video1]
+![Click to view video on youtube](https://youtu.be/IGx0S4LCpFQ)
 
 ---
 
