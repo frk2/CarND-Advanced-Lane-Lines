@@ -19,7 +19,7 @@ The goals / steps of this project are the following:
 [image2]: ./output_images/real_undistorted.jpg "Real Undistorted"
 [image3]: ./output_images/binary_output.jpg "Binary"
 [image4]: ./output_images/warped.jpg "Warped"
-[image5]: ./output_images/colorwarpedjpg "Color warped"
+[image5]: ./output_images/colorwarped.jpg "Color warped"
 [image6]: ./output_images/output.jpg "Output"
 [video1]: ./output.mp4 "Video"
 
