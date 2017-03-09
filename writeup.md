@@ -118,7 +118,7 @@ The radius of curvature is calculated using the formula provided as part of the 
 ```
 def calcCurvature(self, fit, max_y):
     return ((1 + (2*fit[0]*max_y*ym_per_pix + fit[1])**2)**1.5) / np.absolute(2*fit[0])
-    ```
+```
 
 #### Output
 
