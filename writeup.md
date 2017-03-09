@@ -149,4 +149,7 @@ What im curious to learn more on:
 - my algo always detects the left line first, and when at zero state accepts any match as the source of truth. In case this is wrong, it takes a while for my algo to recover. Need to improve on this somehow by adding a concept of how 'sure' we are about our fitted lines and being able to overturn the left fit for a awesome right fit.
 - My parallel testing is very unscientific. I wasn't able to lookup any mathematical concept to help with calculating the perpendicular distance between two polynomials - any references are welcome!
 
+##Challenge Videos
+My algo doesn't work too well on the first challenge video. It seems to home onto the line cracks instead of the white lines. I have to make it detect white specifically which the pipeline doesn't seem to do. It also seems to home onto the shadows. Unfortunately Ive run out of time on this project to look deeper into these issues but would love to know how to handle these situations better?
+
 
