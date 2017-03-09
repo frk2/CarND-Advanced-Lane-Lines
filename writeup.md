@@ -114,28 +114,25 @@ I'm sure we can do better than some arbitrary minimum - but 100 seemed to work.
 ![alt text][image5]
 
 #### Curvature
-The radius of curvature is calculated
-I did this in lines # through # in my code in `my_other_file.py`
+The radius of curvature is calculated using the formula provided as part of the Line class:
+```
+def calcCurvature(self, fit, max_y):
+    return ((1 + (2*fit[0]*max_y*ym_per_pix + fit[1])**2)**1.5) / np.absolute(2*fit[0])
+    ```
 
-####6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
+#### Output
 
-I implemented this step in lines # through # in my code in `yet_another_file.py` in the function `map_lane()`.  Here is an example of my result on a test image:
+The final output image is as shown. A few tweaks were performed to aid debugging:
+- the s channel or the binary output is visible on the image
+- the warped line centroids and the fitlines are visible on this image
+- In addition to the area filled with green, the line is painted blue if detected and RED if not.
 
 ![alt text][image6]
 
----
-
 ###Pipeline (video)
-
-####1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
-
-Here's a [link to my video result](./project_video.mp4)
+The following video is what you get:
+![video1]
 
 ---
 
 ###Discussion
-
-####1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
-
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
-
