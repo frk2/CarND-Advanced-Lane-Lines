@@ -131,7 +131,7 @@ The final output image is as shown. A few tweaks were performed to aid debugging
 
 ###Pipeline (video)
 The following video is what you get:
-![video1]
+![Click to view video on youtube][video1]
 
 ---
 
