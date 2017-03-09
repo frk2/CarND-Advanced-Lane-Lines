@@ -131,7 +131,9 @@ The final output image is as shown. A few tweaks were performed to aid debugging
 
 ###Pipeline (video)
 The following video is what you get:
-![Click to view video on youtube](https://youtu.be/IGx0S4LCpFQ)
+[Click to view video on youtube](https://youtu.be/IGx0S4LCpFQ)
+
+[Click here to download video](./output.mp4)
 
 ---
 
